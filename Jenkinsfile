@@ -20,5 +20,10 @@ pipeline {
         sh './jenkins/scripts/test.sh'
       }
     }
+    stage('Test-echo') {
+      steps {
+        sh 'echo \'Hello World!\''
+      }
+    }
   }
 }
